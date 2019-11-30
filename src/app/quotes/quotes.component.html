@@ -1,10 +1,11 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
-      <p *ngFor='let quote of quotes'>
+    <div class="card card-body col-md-6">
+      <p class="card-text" *ngFor='let quote of quotes'>
         {{quote.sentence}}
       </p>
+      <button class="btn btn-primary">details</button>
+      <app-quote-details *ngFor='let quote of quotes' [quote]='quote'></app-quote-details>
     </div>
   </div>
 </div>
-
