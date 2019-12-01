@@ -1,11 +1,11 @@
 <div class="container">
   <div class="row">
-    <div class="card card-body col-md-6">
-      <p class="card-text" *ngFor='let quote of quotes'>
+    <div class="card card-body col-md-6" *ngFor='let quote of quotes;let i = index'>
+      <p class="card-text">
         {{quote.sentence}}
       </p>
-      <button class="btn btn-primary">details</button>
-      <app-quote-details *ngFor='let quote of quotes' [quote]='quote'></app-quote-details>
+      <button (click)='showMore(i)' class="btn btn-primary">more details</button>
+      <app-quote-details *ngIf='quote.showDetails' [quote]='quote'></app-quote-details>
     </div>
   </div>
 </div>

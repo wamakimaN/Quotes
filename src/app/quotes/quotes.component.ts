@@ -12,6 +12,10 @@ export class QuotesComponent implements OnInit {
    new Quote('Lonyangapou','Kama hukuna kaa na mama yako',7,6,5)
   ];
 
+  showMore(index){
+    this.quotes[index].showDetails  = !this.quotes[index].showDetails;
+  }
+
   constructor() { }
 
   ngOnInit() {
