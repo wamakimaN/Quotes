@@ -1,9 +1,11 @@
 <div>
   <p>Said by : {{quote.name}}</p>
-  <p >
-      Up-votes {{upVotes}} Down-votes {{downVotes}} Posted {{quote.published|dateCount}} day(s) ago.
+  <p>
+   Posted {{quote.published|dateCount}} day(s) ago.
   </p>
-  <button (click)= 'upVote()' class="btn btn-success">up vote</button>
-  <button (click)= 'downVote()' class="btn btn-danger">down vote</button>
-  <button (click)= 'deleteThis(true)' class="btn btn-dark">Delete</button>
+  <div class="buttons">
+    <button (click)='upVote()' class="btn btn-success"><i class="fa fa-thumbs-up">  {{upVotes}}</i></button>
+    <button (click)='downVote()' class="btn btn-danger"><i class="fa fa-thumbs-down">  {{downVotes}}</i></button>
+    <button (click)='deleteThis(true)' class="btn btn-dark"><i class="fa fa-trash" aria-hidden="true"></i></button>
+  </div>
 </div>

@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
 
   quotes:Quote[]=[
-   new Quote('Lonyangapou','Kama hukuna kaa na mama yako',new Date(2019,10,29))
+   new Quote('Audrey Hepburn','For beautiful eyes, look for the good in others; for beautiful lips, speak only words of kindness; and for poise, walk with the knowledge that you are never alone.',new Date(2019,10,29))
   ];
 
   showMore(index){
