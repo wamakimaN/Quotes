@@ -12,8 +12,10 @@ export class QuoteDetailsComponent implements OnInit {
   @Output() isDelete = new EventEmitter<boolean>();
 
   deleteThis(erase:boolean){
-    this.isDelete.emit(erase)
+    this.isDelete.emit(erase);
   }
+
+
 
   ngOnInit() {
   }

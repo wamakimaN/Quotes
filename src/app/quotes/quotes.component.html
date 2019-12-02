@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="card card-body col-md-6" *ngFor='let quote of quotes;let i = index'>
+    <div class="card card-body col-md-3" *ngFor='let quote of quotes;let i = index'>
       <p class="card-text">
         '{{quote.sentence}}' -{{quote.published|date}}
       </p>
@@ -8,7 +8,7 @@
       <app-quote-details *ngIf='quote.showDetails' [quote]='quote' (isDelete) = 'deleteQuote($event,i)'></app-quote-details>
     </div>
     <div class="col-md-6">
-      <app-quote-form></app-quote-form>
+      <app-quote-form (addQuote) = "addNewQuote($event)"></app-quote-form>
     </div>
   </div>
 </div>

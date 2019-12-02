@@ -1,6 +1,6 @@
 <div>
   <p >
-      Up-votes {{quote.upVotes}} Down-votes {{quote.downVotes}} Posted {{quote.published|dateCount}} day(s) ago.
+      Up-votes {{upVotes}} Down-votes {{downVotes}} Posted {{quote.published|dateCount}} day(s) ago.
   </p>
   <button (click)= 'upVote()' class="btn btn-success">up vote</button>
   <button (click)= 'downVote()' class="btn btn-danger">down vote</button>
