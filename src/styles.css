@@ -1,2 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+nav{
+  background-color: black;
+  height: 70px;
+  text-align: center;
+}
+
+nav h3{
+  position: absolute;
+  padding: 3px;
+  float: left;
+}
+.main{
+  margin-top: 30px;
+}
