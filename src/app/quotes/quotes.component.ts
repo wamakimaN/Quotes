@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
 
   quotes:Quote[]=[
-   new Quote('Lonyangapou','Kama hukuna kaa na mama yako',7,6,5)
+   new Quote('Lonyangapou','Kama hukuna kaa na mama yako',7,6,new Date(2019,10,29))
   ];
 
   showMore(index){
