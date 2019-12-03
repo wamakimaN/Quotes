@@ -28,6 +28,7 @@ export class QuotesComponent implements OnInit {
 
 addNewQuote(quote){
   quote.published = new Date(quote.published)
+  quote = new Quote(quote.name,quote.sentence,quote.published)
 
   if (quote.name === '' || quote.sentence === '' || quote.published ==='') {
     return false;  
