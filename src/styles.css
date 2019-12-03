@@ -34,3 +34,6 @@ nav {
 .title{
   color: bisque;
 }
+.lane{
+  background-image: url(./assets/images/purple.jpg);
+}
